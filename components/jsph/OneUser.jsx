@@ -14,10 +14,11 @@ export default function OneUser({ user }) {
             <fieldset className="user-card">
                 <legend>#{id} {username}</legend>
                 <h3>{name}</h3>
-                <span><a href={`mailto:${email}`}>{email}</a><a href={`tel:${phone}`}>{phone}</a></span>
-                <span><a href={`http://${website}`}>{website}</a></span>
-                <span title={zipcode}> <a href={`https://maps.google.com/maps?ll=${lat},${lng}`}>{street}</a></span>
-                <span><b>{cname}</b><br />{catchPhrase}<br />{bs}</span>
+                <span>Email: <a href={`mailto:${email}`}>{email}</a></span><br/>
+                <span>Phone: <a href={`tel:${phone}`}>{phone}</a></span><br/>
+                <span>Website: <a href={`http://${website}`}>{website}</a></span><br/>
+                <span title={zipcode}>Address: <a href={`https://maps.google.com/maps?ll=${lat},${lng}`}>{street}</a></span><br/>
+                <span>Company: <b>{cname}</b><br />{catchPhrase}<br />{bs}</span>
             </fieldset>
         </>
     );
