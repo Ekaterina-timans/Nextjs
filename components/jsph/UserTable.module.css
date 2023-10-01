@@ -1,0 +1,9 @@
+.tableUser{
+    border: black 1px solid;
+    border-spacing: 20px;
+    margin: 0 auto 0 auto;
+}
+.heading{
+    text-align: center;
+    background: #97c7ed;
+}
